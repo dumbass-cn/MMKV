@@ -25,7 +25,7 @@
 #    include "CodedInputData.h"
 #    include "CodedOutputData.h"
 #    include "InterProcessLock.h"
-#    include "MMKV.h"
+#    include "MMKV.hpp"
 #    include "MemoryFile.h"
 #    include "MiniPBCoder.h"
 #    include "PBUtility.h"

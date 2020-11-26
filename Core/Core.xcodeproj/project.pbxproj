@@ -36,7 +36,7 @@
 		CB95642123AB2E9100ACCD39 /* InterProcessLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB95641023AB2E9100ACCD39 /* InterProcessLock.cpp */; };
 		CB95642223AB2E9100ACCD39 /* MMKVLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB95641123AB2E9100ACCD39 /* MMKVLog.cpp */; };
 		CB95642323AB2E9100ACCD39 /* PBUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB95641223AB2E9100ACCD39 /* PBUtility.cpp */; };
-		CB95642423AB2F7200ACCD39 /* MMKV.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB9563ED23AB2E9100ACCD39 /* MMKV.h */; };
+		CB95642423AB2F7200ACCD39 /* MMKV.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB9563ED23AB2E9100ACCD39 /* MMKV.hpp */; };
 		CB95642523AB2FA800ACCD39 /* MMBuffer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB9563FA23AB2E9100ACCD39 /* MMBuffer.h */; };
 		CB95642723AB2FB800ACCD39 /* PBUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB9563F623AB2E9100ACCD39 /* PBUtility.h */; };
 		CB95642823AB2FB800ACCD39 /* ThreadLock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB95640D23AB2E9100ACCD39 /* ThreadLock.h */; };
@@ -78,7 +78,10 @@
 		CBF1906F243D70BA001C82ED /* PBUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB9563F623AB2E9100ACCD39 /* PBUtility.h */; };
 		CBF19070243D70BA001C82ED /* ThreadLock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB95640D23AB2E9100ACCD39 /* ThreadLock.h */; };
 		CBF19071243D70BA001C82ED /* MMBuffer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB9563FA23AB2E9100ACCD39 /* MMBuffer.h */; };
-		CBF19072243D70BA001C82ED /* MMKV.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB9563ED23AB2E9100ACCD39 /* MMKV.h */; };
+		CBF19072243D70BA001C82ED /* MMKV.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB9563ED23AB2E9100ACCD39 /* MMKV.hpp */; };
+		CE2C8F69256F9BA600E3538C /* libMMKV.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE2C8F67256F9BA600E3538C /* libMMKV.mm */; };
+		CE2C8F6C256F9BD200E3538C /* MMKV.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE2C8F66256F9BA600E3538C /* MMKV.h */; };
+		CE2C8F6F256F9BDC00E3538C /* MMKVHandler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE2C8F68256F9BA600E3538C /* MMKVHandler.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +91,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				CE2C8F6F256F9BDC00E3538C /* MMKVHandler.h in CopyFiles */,
+				CE2C8F6C256F9BD200E3538C /* MMKV.h in CopyFiles */,
 				CB0DCC46242B3856009AFE59 /* openssl_opensslconf.h in CopyFiles */,
 				CB0DCC45242B384E009AFE59 /* openssl_md5.h in CopyFiles */,
 				CB6D44C323B308D100F369AA /* MMKVLog.h in CopyFiles */,
@@ -96,7 +101,7 @@
 				CB95642723AB2FB800ACCD39 /* PBUtility.h in CopyFiles */,
 				CB95642823AB2FB800ACCD39 /* ThreadLock.h in CopyFiles */,
 				CB95642523AB2FA800ACCD39 /* MMBuffer.h in CopyFiles */,
-				CB95642423AB2F7200ACCD39 /* MMKV.h in CopyFiles */,
+				CB95642423AB2F7200ACCD39 /* MMKV.hpp in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +119,7 @@
 				CBF1906F243D70BA001C82ED /* PBUtility.h in CopyFiles */,
 				CBF19070243D70BA001C82ED /* ThreadLock.h in CopyFiles */,
 				CBF19071243D70BA001C82ED /* MMBuffer.h in CopyFiles */,
-				CBF19072243D70BA001C82ED /* MMKV.h in CopyFiles */,
+				CBF19072243D70BA001C82ED /* MMKV.hpp in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +140,7 @@
 		CB9563E423AB2E9100ACCD39 /* CodedInputData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodedInputData.h; sourceTree = "<group>"; };
 		CB9563EB23AB2E9100ACCD39 /* Checksum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Checksum.h; sourceTree = "<group>"; };
 		CB9563EC23AB2E9100ACCD39 /* MMKVMetaInfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MMKVMetaInfo.hpp; sourceTree = "<group>"; };
-		CB9563ED23AB2E9100ACCD39 /* MMKV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKV.h; sourceTree = "<group>"; };
+		CB9563ED23AB2E9100ACCD39 /* MMKV.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MMKV.hpp; sourceTree = "<group>"; };
 		CB9563EE23AB2E9100ACCD39 /* MMKVPredef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKVPredef.h; sourceTree = "<group>"; };
 		CB9563EF23AB2E9100ACCD39 /* CodedOutputData.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = CodedOutputData.cpp; sourceTree = "<group>"; };
 		CB9563F023AB2E9100ACCD39 /* MemoryFile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = MemoryFile.cpp; sourceTree = "<group>"; };
@@ -178,6 +183,9 @@
 		CBD723F623B5FD9E00D3CDAF /* CodedInputData_OSX.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = CodedInputData_OSX.cpp; sourceTree = "<group>"; };
 		CBF19076243D70BA001C82ED /* libMMKVCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMKVCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF3450323B4BABA00168AC7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		CE2C8F66256F9BA600E3538C /* MMKV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKV.h; sourceTree = "<group>"; };
+		CE2C8F67256F9BA600E3538C /* libMMKV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = libMMKV.mm; sourceTree = "<group>"; };
+		CE2C8F68256F9BA600E3538C /* MMKVHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKVHandler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +223,7 @@
 		CB9563CF23AB2D9500ACCD39 = {
 			isa = PBXGroup;
 			children = (
+				CE2C8F65256F9BA600E3538C /* macOS */,
 				CB9563FC23AB2E9100ACCD39 /* aes */,
 				CB9563E523AB2E9100ACCD39 /* crc32 */,
 				CB30A41E2498CFB6007171B1 /* CodedInputDataCrypt_OSX.cpp */,
@@ -242,7 +251,7 @@
 				CB9563F223AB2E9100ACCD39 /* MMKV.cpp */,
 				CB7C029924A0F65B008D77E6 /* MMKV_IO.cpp */,
 				CB7C029E24A0FBC2008D77E6 /* MMKV_IO.h */,
-				CB9563ED23AB2E9100ACCD39 /* MMKV.h */,
+				CB9563ED23AB2E9100ACCD39 /* MMKV.hpp */,
 				CB95641123AB2E9100ACCD39 /* MMKVLog.cpp */,
 				CB9563F423AB2E9100ACCD39 /* MMKVLog.h */,
 				CB9563EC23AB2E9100ACCD39 /* MMKVMetaInfo.hpp */,
@@ -303,6 +312,16 @@
 				CB95640023AB2E9100ACCD39 /* openssl_opensslconf.h */,
 			);
 			path = openssl;
+			sourceTree = "<group>";
+		};
+		CE2C8F65256F9BA600E3538C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C8F66256F9BA600E3538C /* MMKV.h */,
+				CE2C8F67256F9BA600E3538C /* libMMKV.mm */,
+				CE2C8F68256F9BA600E3538C /* MMKVHandler.h */,
+			);
+			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +419,7 @@
 				CB7C029A24A0F65B008D77E6 /* MMKV_IO.cpp in Sources */,
 				CB95641E23AB2E9100ACCD39 /* openssl_md5_one.cpp in Sources */,
 				CB95641C23AB2E9100ACCD39 /* openssl_aes_core.cpp in Sources */,
+				CE2C8F69256F9BA600E3538C /* libMMKV.mm in Sources */,
 				CB95641923AB2E9100ACCD39 /* MMBuffer.cpp in Sources */,
 				CBD723F723B5FD9E00D3CDAF /* CodedInputData_OSX.cpp in Sources */,
 				CBC7A01123C7231600CCC492 /* openssl_aesv8-armx.S in Sources */,

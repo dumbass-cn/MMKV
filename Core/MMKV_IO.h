@@ -22,7 +22,7 @@
 #define MMKV_IO_h
 #ifdef __cplusplus
 
-#include "MMKV.h"
+#include "MMKV.hpp"
 
 MMKV_NAMESPACE_BEGIN
 
